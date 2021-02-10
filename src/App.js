@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Questions from "./components/questions";
+import Form from "./components/Form";
 
 function App() {
+  const [budget, setBudget] = useState(0);
+  const [remaining, setRemaining] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header>
+      <h1>Budget App</h1>
+      <div className="main-content content">
+        <Questions setBudget={setBudget} setRemaining={setRemaining} />
+        <div className="row">
+          <div className="one-half column">
+            <Form />
+          </div>
+          <div className="one-half column">2</div>
+        </div>
+      </div>
+    </header>
   );
 }
 
