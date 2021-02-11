@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import React, { useState, Fragment } from "react";
 import Error from "./Error";
 
-const Form = ({ addNewExpense }) => {
+const Form = ({ setExpense, setNewExpense }) => {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState();
   const [error, setError] = useState(false);
@@ -27,11 +27,12 @@ const Form = ({ addNewExpense }) => {
     };
 
     //send expense thru main component
-    addNewExpense(expense);
+    setExpense(expense);
+    setNewExpense(true);
 
     //reset from
     setName("");
-    setAmount("");
+    setAmount(0);
   };
 
   return (
