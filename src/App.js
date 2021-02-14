@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import Footer from "./components/Footer";
 import List from "./components/List";
 import BudgetControl from "./components/Budgetcontrol";
+import Preload from "./components/Preload";
 
 function App() {
   const [budget, setBudget] = useState(0);
@@ -12,6 +13,7 @@ function App() {
   const [expenses, setExpenses] = useState([]);
   const [expense, setExpense] = useState({});
   const [newExpense, setNewExpense] = useState(false);
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
     //add new budget
