@@ -62,7 +62,7 @@ const Form = ({ setExpense, setNewExpense }) => {
           onChange={(e) => setAmount(parseInt(e.target.value), 10)}
         />
 
-        <button type="submit" className="button-primary u-full-width">
+        <button type="submit" className="button u-full-width">
           + Add Expense
         </button>
       </form>

@@ -32,10 +32,10 @@ const Questions = ({ setBudget, setRemaining, setQuestion }) => {
         <input
           type="number"
           className="u-full-width"
-          placeholder="type your budget here"
+          placeholder="type your budget amount here"
           onChange={handleChange}
         />
-        <button type="submit" className="button-primary u-full-width">
+        <button type="submit" className="button u-full-width">
           Submit
         </button>
       </form>

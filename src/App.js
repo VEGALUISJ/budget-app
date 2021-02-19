@@ -32,32 +32,34 @@ function App() {
   return (
     <header>
       <h1>Budget Control App</h1>
-      {showquestion ? (
-        <Fragment>
-          <div className="main-content content">
-            <Questions
-              setBudget={setBudget}
-              setRemaining={setRemaining}
-              setQuestion={setQuestion}
-            />
-          </div>
-          <Footer classForResponsive={"footer2"} />
-        </Fragment>
-      ) : (
-        <Fragment>
-          <div className="main-content2">
-            <div className="main-content3 content">
-              <Form setExpense={setExpense} setNewExpense={setNewExpense} />
+      <div className="master-wrapper">
+        {showquestion ? (
+          <Fragment>
+            <div className="main-content content">
+              <Questions
+                setBudget={setBudget}
+                setRemaining={setRemaining}
+                setQuestion={setQuestion}
+              />
             </div>
-            <div className="main-content4 content">
-              <h2>List</h2>
-              <BudgetControl budget={budget} remaining={remaining} />
-              <List expenses={expenses} />
+            <Footer classForResponsive={"footer2"} />
+          </Fragment>
+        ) : (
+          <Fragment>
+            <div className="main-content2">
+              <div className="main-content3 content">
+                <Form setExpense={setExpense} setNewExpense={setNewExpense} />
+              </div>
+              <div className="main-content4 content">
+                <h2>List</h2>
+                <BudgetControl budget={budget} remaining={remaining} />
+                <List expenses={expenses} />
+              </div>
             </div>
-          </div>
-          <Footer classForResponsive={"footer1"} />
-        </Fragment>
-      )}
+            <Footer classForResponsive={"footer1"} />
+          </Fragment>
+        )}
+      </div>
     </header>
   );
 }
