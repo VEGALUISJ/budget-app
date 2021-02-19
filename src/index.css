@@ -197,6 +197,7 @@ h2 {
 
 .expenses-made li p .expense {
   background-color: midnightblue;
+  border-radius: 20px;
   padding: 1rem;
   color: white;
 }
