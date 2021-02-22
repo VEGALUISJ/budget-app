@@ -10,7 +10,9 @@ This is a web application where you can manage your budget in an intelligent way
 
 ##### Cool Features:
 
-Loading...
+Cool Design.
+Full Responsive for Mobile divices.
+Some Smoooth animations for better UX.
 
 ##### Getting Started:
 
