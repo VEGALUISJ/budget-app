@@ -29,6 +29,13 @@ function App() {
     setNewExpense(false);
   }, [expense]);
 
+  // //Delete Expense
+  // const deleteExpense = (id) => {
+  //   //Deleting Expense
+  //   const newExpenses = expenses.filter((newExpense) => newExpense.id !== id);
+  //   setExpenses(newExpenses);
+  // };
+
   return (
     <header>
       <h1>Budget Control App</h1>
